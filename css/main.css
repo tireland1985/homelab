@@ -1,0 +1,72 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1rem;
+	color: #ffffff;
+    background-color: #3d445c;
+}
+nav {
+	padding: 0em 0.5em;
+	background: rgba(117, 117, 117, 0.4);
+	font-family: 'Bree Serif', serif;
+}
+.dropdown-content {
+    background-color:#3d445c;
+    width:12vw;
+}
+ul .dropdown-content li a { 
+    font-size:1.5em;
+}
+
+nav a:link {
+	color: #ffffff;
+}
+
+nav a:visited {
+	color: #ffffff;
+}
+
+nav a:active {
+	color: #ffffff;
+}
+
+nav ul li a {
+	font-size: 1.7em;
+}
+
+a:link {
+	text-transform: none;
+	color: #63ccff;
+}
+
+a:visited {
+	text-transform: none;
+	color: #63ccff;
+}
+
+a:active {
+	text-transform: none;
+	color: #63ccff;
+}
+
+i {
+	font-size: 1.5rem;
+	color: rgb(99, 204, 255);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Bree Serif', serif;
+}
+
+.card-opacity {
+    /* modification of materialize style .blue.darken-4 (same colour, added opacity) */
+    background-color: rgba(13, 72, 161, 0.37);
+}
+
+.card-opacity:hover { /* add shadow on hover */
+    box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+    transition:1s;
+}
+.page-footer {
+    background-color: #3d445c;
+
+}

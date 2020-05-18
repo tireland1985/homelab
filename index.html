@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,147 +26,502 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body>
     <header>
-    <div class="navbar-fixed">
-        <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#">test</a></li>
-            <li><a href="#">test2</a></li>
-            <li><a href="#">test3</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+        <div class="navbar-fixed">
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#infrastructure">Infrastructure</a></li>
+                <li><a href="#">Personal Dashboard</a></li>
+                <li><a href="#">My Portfolio</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo"><img src="/favicon-32x32.png" alt="Logo"></a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on med-and-down">
+                        <li><a href="#ipmi">IPMI</a></li>
+                        <li><a href="#vsphere">vSphere</a></li>
+                        <li><a href="#monitoring">Monitoring</a></li>
+                        <li><a href="#vm">VM's</a></li>
+                        <li><a href="#!" class="dropdown-trigger" data-target="dropdown1">Other<i
+                                    class="material-icons">arrow_drop_down</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="#ipmi">IPMI</a></li>
+            <li><a href="#vsphere">vSphere</a></li>
+            <li><a href="#monitoring">Monitoring</a></li>
+            <li><a href="#vm">VM's</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#infrastructure">Infrastructure</a></li>
         </ul>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo"><img src="/favicon-32x32.png" alt="Logo"></a>
-                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on med-and-down">
-                    <li><a href="#ipmi">IPMI</a></li>
-                    <li><a href="#vsphere">vSphere</a></li>
-                    <li><a href="#monitoring">Monitoring</a></li>
-                    <li><a href="#vm">VM's</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#!" class="dropdown-trigger" data-target="dropdown1">Dropdown <i class="material-icons">arrow_drop_down</i></a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <ul class="sidenav" id="mobile-nav">
-        <li><a href="#ipmi">IPMI</a></li>
-        <li><a href="#vsphere">vSphere</a></li>
-        <li><a href="#monitoring">Monitoring</a></li>
-        <li><a href="#vm">VM's</a></li>
-        <li><a href="#services">Services</a></li>
-    </ul>
-</header>
-<main>
-    <div class="row">
-        <div class="col s12 center">
-            <h1>Internal/ Homelab Services </h1>
-            <h2 id="ipmi">IPMI</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col s12 center">
-            <div class="card-panel card-opacity">
-                <span class="white-text"><a href="http://">ESXi1 IPMI</a></span>
-            </div>
-            <div class="card-panel card-opacity">
-                <span class="white-text"><a href="http://">ESXi2 IPMI</a></span>
-            </div>
-            <div class="card-panel card-opacity">
-                <span class="white-text"><a href="http://">NAS1 IPMI</a></span>
-            </div>
-            <div class="card-panel card-opacity">
-                <span class="white-text"><a href="http://">Server IPMI</a></span>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col s12 center">
+                <h1>Internal/ Homelab Services </h1>
+                <h2 id="ipmi">IPMI</h2>
             </div>
         </div>
-    </div>
-    <div class="row col s12 center">
-        <h2 id="vsphere">vSphere</h2>
-    </div>
-    <div class="row">
-        <div class="col s12 center">
-            <div class="card-panel card-opacity">
-                <span class="white-text"><a href="http://">vCenter Server: vSphere Client</a></span>
+        <div class="row">
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://esxi1.ipmi.example.com">ESXi 1 IPMI</a></span>
+                </div>
             </div>
-            <div class="card-panel card-opacity">
-                <span class="white-text"><a href="http://">vCenter Server: VAMI</a></span>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://esxi2.ipmi.example.com">ESXi 2 IPMI</a></span>
+                </div>
             </div>
-            <div class="card-panel card-opacity">
-                <span class="white-text"><a href="http://">ESXi 1</a></span>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://esxi3.ipmi.example.com">ESXi 3 IPMI</a></span>
+                </div>
             </div>
-            <div class="card-panel card-opacity">
-                <span class="white-text"><a href="http://">ESXi 2</a></span>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://nas1.ipmi.example.com">NAS 1 IPMI</a></span>
+                </div>
             </div>
-            <div class="card panel card-opacity">
-                <span class="white-text"><a href="http://">ESXi 3</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="row col s12 center">
-        <h2 id="monitoring">Network & Server Monitoring</h2>
-    </div>
-    <div class="row">
-        <div class="col s12 center">
-            <div class="card-panel card-opacity">
-                <span class="white-text"><a href="http://">Graylog</a></span>
-            </div>
-            <div class="card-panel card-opacity">
-                <span class="white-text"><a href="http://">MRTG - Network Infrastructure</a></span>
-            </div>
-            <div class="card-panel card-opacity">
-                <span class="white-text"><a href="http://">Grafana</a></span>
-            </div>
-            <div class="card-panel card-opacity">
-                <span class="white-text"><a href="http://">IP Address Management</a></span>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://server.ipmi.example.com">Server IPMI</a></span>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row col s12 center">
-        <h2 id="vm">Virtual Machines</h2>
-    </div>
-    <div class="row">
-        <div class="col s12 center">
-            <div class="card-panel card-opacity">
-                <span class="white-text"><a href="">Certificate Authority</a></span>
-            </div>
-
-
-
-
-
+        <div class="row col s12 center">
+            <h2 id="vsphere">vSphere</h2>
         </div>
-    </div>
-    <div class="row col s12 center">
-        <h2 id="services">Services</h2>
-    </div>
-    <div class="row">
-        <div class="col s12 center">
-            <div class="card-panel card-opacity">
-                <span class="white-text"><a href="http://">Internal Gitlab Server</a></span>
+        <div class="row">
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://vcsa.int.example.com">vCenter Server: vSphere Client</a></span>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://vcsa.int.example.com:5480">vCenter Server: VAMI</a></span>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://esxi1.int.example.com">ESXi 1</a></span>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://esxi2.int.example.com">ESXi 2</a></span>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://esxi3.int.example.com">ESXi 3</a></span>
+                </div>
             </div>
         </div>
-    </div>
-    
-</main>
-<footer class="page-footer">
-    <div class="row col s12 center">
-        <p class="center">&copy; 2020 Tim Ireland</p>
-    </div>
-</footer>
+        <div class="row col s12 center">
+            <h2 id="monitoring">Network & Server Monitoring</h2>
+        </div>
+        <div class="row">
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://graylog.int.example.com">Graylog</a></span>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://nms1.int.example.com/cgi-bin/routers2.cgi">MRTG - Network Monitor</a></span>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://dashboard.int.example.com:3000">Grafana</a></span>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://nms1.int.example.com/ipam">IP Address Management</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="row col s12 center">
+            <h2 id="vm">Virtual Machines &amp; Devices</h2>
+        </div>
+        <div class="row">
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Domain Controller<a href=""></a></span>
+                    <ul>
+                        <li>Hostname: dc1</li>
+                        <li>CPU:</li>
+                        <li>RAM:</li>
+                        <li>Services: AD, DNS, DHCP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Domain Controller<a href=""></a></span>
+                    <ul>
+                        <li>Hostname: dc2</li>
+                        <li>CPU:</li>
+                        <li>RAM:</li>
+                        <li>Services: AD, DNS, DHCP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Certificate Authority<a href=""></a></span>
+                    <ul>
+                        <li>Hostname: ca1</li>
+                        <li>CPU:</li>
+                        <li>RAM:</li>
+                        <li>Services: Enterprise Certificate Services</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">VPN Server<a href=""></a></span>
+                    <ul>
+                        <li>Hostname: openvpnas2</li>
+                        <li>CPU:</li>
+                        <li>RAM:</li>
+                        <li>Services: OpenVPN Access Server</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Dashboard<a href=""></a></span>
+                    <ul>
+                        <li>Hostname: dashboard</li>
+                        <li>CPU:</li>
+                        <li>RAM:</li>
+                        <li>Services: Organizr, Grafana, MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Graylog<a href=""></a></span>
+                    <ul>
+                        <li>Hostname: graylog</li>
+                        <li>CPU:</li>
+                        <li>RAM:</li>
+                        <li>Services: graylog - searchable, centralised logging</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">DNS Server<a href=""></a></span>
+                    <ul>
+                        <li>Hostname: ns1</li>
+                        <li>CPU:</li>
+                        <li>RAM:</li>
+                        <li>Services: DNS, DNS-Over-TLS, DHCP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">DNS Server<a href=""></a></span>
+                    <ul>
+                        <li>Hostname: ns2</li>
+                        <li>CPU:</li>
+                        <li>RAM:</li>
+                        <li>Services: DNS, DNS-Over-TLS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">RADIUS<a href=""></a></span>
+                    <ul>
+                        <li>Hostname: radius1</li>
+                        <li>CPU:</li>
+                        <li>RAM:</li>
+                        <li>Services: FreeRADIUS - WiFi Authentication</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">TACACS<a href=""></a></span>
+                    <ul>
+                        <li>Hostname: tacacs1</li>
+                        <li>CPU:</li>
+                        <li>RAM:</li>
+                        <li>Services: TACACS for Network Device Authentication</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Network Monitoring<a href=""></a></span>
+                    <ul>
+                        <li>Hostname: nms1</li>
+                        <li>CPU:</li>
+                        <li>RAM:</li>
+                        <li>Services: Syslog server, MRTG</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row col s12 center">
+            <h2 id="services">Services</h2>
+        </div>
+        <div class="row">
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://gitlab.int.example.com">Gitlab Server</a></span>
+                    <p>Private Git repositories - /etc 'backups' among others</p>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text"><a href="http://ca1.int.example.com">Certificate Authority</a></span>
+                    <p>Windows Server - Enterprise Certificate Authority</p>
+                   </div> 
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">DHCP<a href=""></a></span>
+                    <p>ISC DHCP Server &amp; Windows DHCP Server</p>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">DNS<a href=""></a></span>
+                    <p>Active Directory DNS &amp; Bind 9 DNS Server</p>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">TACACS<a href=""></a></span>
+                    <p>Network Device Authentication, Authorization &amp; Accounting</p>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">FreeRADIUS<a href=""></a></span>
+                    <p>Wireless SSID Authentication</p>
+                </div>
+            </div>
+        </div>
+        <div class="row col s12 center">
+            <h2 id="infrastructure">Infrastructure</h2>
+        </div>
+        <div class="row">
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Dell PowerEdge R420</span>
+                    <ul>
+                        <li>CPU: 1x Intel Xeon E5-2407</li>
+                        <li>RAM: 96Gb ECC RDIMM DDR3</li>
+                        <li>NIC: 4x Intel 1Gb, 2x Broadcom 1Gb</li>
+                        <li>Disk: 4x Dell SAS (800GB RAID6)</li>
+                        <li>OS: VMware ESXi 6.7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Dell PowerEdge R310</span>
+                    <ul>
+                        <li>CPU: Intel Xeon X3470</li>
+                        <li>RAM: 24GB ECC RDIMM DDR3</li>
+                        <li>NIC: 4x Intel 1Gb, 2x1Gb builtin</li>
+                        <li>Disk: 1TB Samsung SSD, 2TB HDD</li>
+                        <li>OS: VMware ESXi 6.5</li>
+                    </ul>
+            </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">AsRock Rack J1900D2y</span>
+                    <ul>
+                        <li>CPU:</li>
+                        <li>RAM:</li>
+                        <li>NIC:</li>
+                        <li>Disk:</li>
+                        <li>OS:</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">AsRock Rack C3758D4I-4L</span>
+                    <ul>
+                        <li>CPU:</li>
+                        <li>RAM: 16GB ECC RDIMM DDR4</li>
+                        <li>NIC: 2x 1Gb builtin</li>
+                        <li>Disk: 20TB RAID-Z1</li>
+                        <li>OS: FreeNAS 11</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Dell PowerEdge 2950-III</span>
+                    <ul>
+                        <li>CPU:</li>
+                        <li>RAM: 64GB ECC RDIMM DDR2</li>
+                        <li>NIC: 4x Intel 1Gb, 2x builtin 1Gb </li>
+                        <li>Disk:</li>
+                        <li>OS: VMware ESXi 5.5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Intel NUC 7i5BNH</span>
+                    <ul>
+                        <li>CPU:</li>
+                        <li>RAM:</li>
+                        <li>NIC:</li>
+                        <li>Disk: 1TB Samsung Evo SSD</li>
+                        <li>OS: VMware ESXi 6.7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Cisco 2811 ISR</span>
+                    <ul>
+                        <li>RAM:</li>
+                        <li>Flash:</li>
+                        <li>OS:</li>
+                        <li>Hostname: CUCME</li>
+                        <li>Services: CUCME Server - VoIP for IP Phones 7960g series</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Cisco 2911 ISR</span>
+                    <ul>
+                        <li>RAM:</li>
+                        <li>Flash:</li>
+                        <li>OS:</li>
+                        <li>Hostname: R6</li>
+                        <li>Services: Internet Access via PPPoE, Dual Stack IPv4/ IPv6</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Cisco c3560G-48-PS-S</span>
+                    <ul>
+                        <li>RAM: </li>
+                        <li>Flash:</li>
+                        <li>OS:</li>
+                        <li>Hostname: DSW</li>
+                        <li>Services: Dual Stack IPv4/ IPv6, Internal Routing, VLANs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Cisco Aironet AIR-1141N-E-K9</span>
+                    <ul>
+                        <li>RAM:</li>
+                        <li>Flash:</li>
+                        <li>OS:</li>
+                        <li>Hostname: AP1</li>
+                        <li>Services: 802.11bn - Multiple SSID's</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Cisco 2620xm ISR</span>
+                    <ul>
+                        <li>RAM:</li>
+                        <li>Flash:</li>
+                        <li>OS:</li>
+                        <li>Hostname: Access-Server</li>
+                        <li>Services: Reverse Telnet - Console/ Terminal Server</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Raspberry Pi 2</span><br>
+                    <ul>
+                        <li>OS:</li>
+                        <li>Hostname:</li>
+                        <li>Primary Services:</li>
+                        <li>Secondary Services:</li>
+                        <li>Disk:</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Raspberry Pi 3</span><br>
+                    <ul>
+                        <li>OS:</li>
+                        <li>Hostname:</li>
+                        <li>Primary Services:</li>
+                        <li>Secondary Services:</li>
+                        <li>Disk:</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Raspberry Pi 3</span><br>
+                    <ul>
+                        <li>OS:</li>
+                        <li>Hostname:</li>
+                        <li>Primary Services:</li>
+                        <li>Secondary Services:</li>
+                        <li>Disk:</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="card-panel card-opacity">
+                    <span class="white-text">Raspberry Pi 2</span><br>
+                    <ul>
+                        <li>OS:</li>
+                        <li>Hostname:</li>
+                        <li>Primary Services:</li>
+                        <li>Secondary Services:</li>
+                        <li>Disk:</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="row col s12 center">
+            <p class="center">&copy; 2020 Tim Ireland</p>
+        </div>
+    </footer>
 
-<!-- Link to jQuery CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!-- Link to jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 
-<!-- Link to Materialize JavaScript CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Link to Materialize JavaScript CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<!-- local JS -->
-<script src="js/scripts.js"></script>
+    <!-- local JS -->
+    <script src="js/scripts.js"></script>
 
-<!-- font awesome kit -->
-<script src="https://kit.fontawesome.com/49d5ff7e71.js" crossorigin="anonymous"></script>
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/49d5ff7e71.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
